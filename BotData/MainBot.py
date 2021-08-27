@@ -137,7 +137,7 @@ def ig_bulkdm():
         try:
             while i < 3:
                 i += 1
-                TARGET_USERS = bot.get_user_followers(user_id=UserINP, nfollows=17)
+                TARGET_USERS = bot.get_user_followers(user_id=UserINP, nfollows=14)
                 bot.send_message(text=MESSUserINP, user_ids=TARGET_USERS)
                 delay_counter(random.randint(300,600))
         except KeyboardInterrupt:
